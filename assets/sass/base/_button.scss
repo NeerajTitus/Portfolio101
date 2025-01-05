@@ -1,0 +1,19 @@
+//button styles applied here
+.btn {
+    border: 1px solid var(--color-white);
+    padding: 0.625rem 1rem;
+    border-radius: 3rem;
+    color: var(--color-white);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s all ease-in;
+    -webkit-transition: 0.2s all ease-in;
+    -moz-transition: 0.2s all ease-in;
+    -ms-transition: 0.2s all ease-in;
+    -o-transition: 0.2s all ease-in;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+}

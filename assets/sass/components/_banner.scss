@@ -1,0 +1,100 @@
+.banner__wrapper {
+    height: 100%;
+    padding-bottom: 60px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        background-color: var(--color-black);
+        opacity: 0.2;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .banner__wrapper--inner {
+        padding-top: 150px;
+        position: relative;
+        z-index: 1;
+        @include for-size(desktop-down) {
+            padding-top: 120px;
+        }
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            line-height: 90px;
+            color: #4cffa9;
+            text-shadow: 3px 4px 9px #414141;
+            @include for-size(desktop-down) {
+                font-size: 4rem;
+            }
+        }
+        p {
+            font-size: 2.25rem;
+            font-weight: 500;
+            line-height: 10px;
+            color: white;
+            text-shadow: 3px 4px 9px #414141;
+            @include for-size(desktop-down) {
+                font-size: 1.25rem;
+                margin: 10px 0 30px;
+                line-height: 1;
+            }
+        }
+        .code-box {
+            max-width: 350px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            box-shadow: 1px 2px 9px 1px rgba(0, 0, 0, 0.19);
+            @include for-size(desktop-down) {
+                margin: 10px 0;
+                padding: 0.75rem;
+            }
+            &.code-right {
+                position: relative;
+                left: 105px;
+                bottom: 20px;
+                @include for-size(desktop-down) {
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+            &.code-bottom {
+                position: relative;
+                bottom: 30px;
+                @include for-size(desktop-down) {
+                    bottom: 0;
+                }
+            }
+            h5 {
+                font-size: 0.875rem;
+                color: #ddd;
+                font-weight: 400;
+                margin: 0 0 0.5rem;
+            }
+            span {
+                color: #ffe37a;
+            }
+            p {
+                font-size: 0.875rem;
+                margin: 13px 0;
+                color: #cdecff;
+                font-weight: 400;
+                span,
+                a {
+                    color: #b1ffaf;
+                    margin-left: 3px;
+                }
+            }
+            .wrap {
+                color: #fff;
+            }
+            .properties {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}

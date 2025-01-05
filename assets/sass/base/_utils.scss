@@ -1,0 +1,31 @@
+//simple HTML classes typically scoped to a single CSS property
+body {
+    margin: 0;
+    font: 14px 'Poppins', sans-serif;
+    background-color: var(--color-black);
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px #000;
+        background-color: transparent;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
