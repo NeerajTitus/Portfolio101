@@ -42,6 +42,11 @@
                 margin: 10px 0 30px;
                 line-height: 1;
             }
+            &+p {
+                line-height: normal;
+                font-size: 1.25rem;
+                font-weight: normal;
+            }
         }
         .code-box {
             max-width: 350px;

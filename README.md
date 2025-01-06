@@ -1,2 +1,2 @@
 # Empty-scaffold
-This is an empty scaffold used for new projects.
+This is a simple portfolio website made using html, css and JS 
